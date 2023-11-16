@@ -21,6 +21,14 @@ sudo chown -R jira /opt/atlassian/jira/
 
 sudo chown -R :jira /opt/atlassian/jira/
 
+sudo systemctl stop jira
+
+sudo find /opt/atlassian/jira/logs/ -type f -name "*.*" -delete
+
+sudo rm -rf /var/atlassian/application-data/jira/.jira-home.lock
+
+sudo rm -rf /opt/atlassian/jira/work/*.*
+
 sudo systemctl restart jira
 
 sudo nano license_key.txt
@@ -34,3 +42,5 @@ save files
 sudo php atlassian-keygen.php -e license_key.txt 
 
 Copy key generate in console goto web paste key  - DONE
+
+Chú ý: nếu lỗi khoảng 80% thì loại bỏ files atlassian-universal-plugin-manager-plugin-4.0.4.jar copy lại files cũ và khởi động lại jira
