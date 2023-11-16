@@ -8,12 +8,15 @@ cd ./JIR-_CR-ck_BMB-ByHUNGBV
 remove files: atlassian-extras-x.x.jar and atlassian-universal-plugin-manager-plugin-x.x.x.jar For Jira Vesion From:
 
 sudo find /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/ -name 'atlassian-extras-*.jar' ! -name 'atlassian-extras-api-*.jar' -exec rm -f {} \;
+
 sudo find /opt/atlassian/jira/atlassian-jira/WEB-INF/atlassian-bundled-plugins/ -name 'atlassian-universal-plugin-manager-plugin-*.jar' -exec rm -f {} \;
 
 sudo mv atlassian-extras-3.2.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
+
 sudo mv atlassian-universal-plugin-manager-plugin-4.0.4.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/atlassian-bundled-plugins/
 
 sudo chown -R jira /opt/atlassian/jira/
+
 sudo chown -R :jira /opt/atlassian/jira/
 
 sudo systemctl restart jira
