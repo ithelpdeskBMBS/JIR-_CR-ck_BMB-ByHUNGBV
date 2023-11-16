@@ -2,7 +2,9 @@
  Full Crack JIRA Tutorial:
 
 apt install php7.4-cli
+
 git clone https://github.com/ithelpdeskBMBS/JIR-_CR-ck_BMB-ByHUNGBV.git
+
 cd ./JIR-_CR-ck_BMB-ByHUNGBV
 
 remove files: atlassian-extras-x.x.jar and atlassian-universal-plugin-manager-plugin-x.x.x.jar For Jira Vesion From:
