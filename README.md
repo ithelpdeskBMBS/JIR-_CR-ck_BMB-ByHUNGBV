@@ -24,10 +24,13 @@ sudo chown -R :jira /opt/atlassian/jira/
 sudo systemctl restart jira
 
 sudo nano license_key.txt
+
 Tìm dòng Server ID: Thêm ID máy chủ hiện tại vào
+
 Và sửa lại các thông tin mjnh mong muốn
 
 save files
+
 sudo php atlassian-keygen.php -e license_key.txt 
 
 Copy key generate in console goto web paste key  - DONE
