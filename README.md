@@ -27,27 +27,27 @@ apt install php7.4-cli
 
 git clone https://github.com/ithelpdeskBMBS/JIR-_CR-ck_BMB-ByHUNGBV.git
 
-cd ./JIR-_CR-ck_BMB-ByHUNGBV
-
 remove files: atlassian-extras-x.x.jar and atlassian-universal-plugin-manager-plugin-x.x.x.jar For Jira Vesion From:
 
 sudo find /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/ -name 'atlassian-extras-*.jar' ! -name 'atlassian-extras-api-*.jar' -exec rm -f {} \;
 
 sudo find /opt/atlassian/jira/atlassian-jira/WEB-INF/atlassian-bundled-plugins/ -name 'atlassian-universal-plugin-manager-plugin-*.jar' -exec rm -f {} \;
 
-sudo mv atlassian-extras-3.2.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
+sudo mv /root/JIR-_CR-ck_BMB-ByHUNGBV/atlassian-extras-3.2.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
 
-*** sudo mv atlassian-universal-plugin-manager-plugin-4.0.4.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/atlassian-bundled-plugins/
+*** sudo mv /root/JIR-_CR-ck_BMB-ByHUNGBV/atlassian-universal-plugin-manager-plugin-4.0.4.jar /opt/atlassian/jira/atlassian-jira/WEB-INF/atlassian-bundled-plugins/
 
-sudo chown -R jira /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
+sudo chown -R jira /opt/atlassian/jira/atlassian-jira/WEB-INF/
 
-sudo chown -R :jira /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
+sudo chown -R :jira /opt/atlassian/jira/atlassian-jira/WEB-INF/
 
 sudo find /opt/atlassian/jira/logs/ -type f -name "*.*" -delete
 
 sudo rm -rf /var/atlassian/application-data/jira/.jira-home.lock
 
 sudo rm -rf /opt/atlassian/jira/work/*.*
+
+sudo rm -rf /root/JIR-_CR-ck_BMB-ByHUNGBV
 
 sudo systemctl restart jira
 
