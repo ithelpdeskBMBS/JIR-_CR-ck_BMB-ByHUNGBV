@@ -2,7 +2,7 @@
  Full Crack JIRA Tutorial:
 
  I:Cr@ck All Version To 2089 ! 
-> stop jira <
+> sudo systemctl stop jira
 
 apt install openjdk-8-jre-headless 
 
@@ -21,7 +21,7 @@ sudo chown -R :jira /opt/atlassian/jira/lib/
 
  II:Cr@ck Maximum Version 8.17.1 !  Unlimited time! User customization time!
 
-sudo systemctl stop jira
+> sudo systemctl stop jira
 
 apt install php7.4-cli
 
