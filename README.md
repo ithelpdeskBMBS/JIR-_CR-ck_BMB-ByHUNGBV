@@ -1,7 +1,7 @@
 # JIR-_CR-ck_BMB-ByHUNGBV
  Full Crack JIRA Tutorial:
 
- I:Cr@ck All Version To 2089 ! 
+==========>>>>>> I:Cr@ck All Version To 2089 !  <<<<<<<< ==========
 > sudo systemctl stop jira
 
 apt install openjdk-8-jre-headless 
@@ -19,7 +19,7 @@ sudo chown -R jira /opt/atlassian/jira/lib/
 sudo chown -R :jira /opt/atlassian/jira/lib/
 
 
- II:Cr@ck Maximum Version 8.17.1 !  Unlimited time! User customization time!
+==========>>>>>> II:Cr@ck Maximum Version 8.17.1 !  Unlimited time! User customization time! <<<<<<<< ==========
 
 > sudo systemctl stop jira
 
